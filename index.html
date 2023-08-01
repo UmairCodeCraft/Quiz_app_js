@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Quaiz App</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="app">
+            <h1>Quize App</h1>
+            <div>
+                <h2 class="question"></h2>
+            </div>
+            <div class="mcqs">
+                <ul>
+                    <li>
+                        <input type="radio" name="mcqs" class="select-btn" id="a">
+                        <label for="mcqs1" class="mcqs" id="a1"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mcqs" class="select-btn" id="b">
+                        <label for="mcqs2" class="mcqs" id="b1"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mcqs" class="select-btn" id="c">
+                        <label for="mcqs3" class="mcqs" id="c1">Answer3:</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mcqs" class="select-btn" id="d">
+                        <label for="mcqs4" class="mcqs" id="d1">Answer4:</label>
+                    </li>
+                </ul>
+                <div class="btn-div">
+                <button class="sb-btn">Submit</button>
+            </div>
+            </div>
+            
+            <div id="result">
+                <h2 class="marks"></h2>
+                    <span>percentage:</span>
+                <div class="progress">
+                    <div class="outer" id="out_id">
+                        <div class="inner">
+                            <div class="percentage_number">
+                                0%
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="sb-btn" onclick="location.reload()">Again</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
